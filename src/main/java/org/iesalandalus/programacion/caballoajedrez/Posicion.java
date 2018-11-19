@@ -7,8 +7,8 @@ public class Posicion {
 
 	//Constructor parametrizado de la clase 
 	public Posicion(int fila, char columna) {
-		this.fila = fila;
-		this.columna = columna;
+		setFila(fila);
+		setColumna(columna);
 	}
 	
 	
