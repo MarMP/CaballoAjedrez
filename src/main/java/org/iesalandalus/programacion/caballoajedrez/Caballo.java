@@ -20,7 +20,11 @@ public class Caballo {
 		this.posicion = posicion;
 	}
 	
-	
+	//Constructor por defecto 
+	public Caballo() {
+		this.color = Color.NEGRO;
+		this.posicion = new Posicion(8, 'b');
+	}
 	
 	
 	
