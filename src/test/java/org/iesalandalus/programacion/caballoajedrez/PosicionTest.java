@@ -104,11 +104,11 @@ public class PosicionTest {
 		assertEquals(posicion1, posicion5);
 		assertEquals(posicion1, posicion1);
 	}
-	/*
+	
 	@Test
 	public void toStringTest() {
 		Posicion posicion = new Posicion(1, 'a');
 		assertEquals("[fila=1, columna=a]", posicion.toString());
-	}*/
+	}
 
 }
