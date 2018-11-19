@@ -46,7 +46,7 @@ public class PosicionTest {
 			assertEquals("ERROR: No es posible copiar una posición nula.", e.getMessage());
 			assertEquals(posicion, nuevaPosicion);
 		}
-	}
+	}  */
 	
 	@Test
 	public void setFilaNoValidaTest() {
@@ -86,6 +86,7 @@ public class PosicionTest {
 		}
 	}
 	
+	/*
 	@Test
 	public void igualdadTest() {
 		Posicion posicion1, posicion2, posicion3, posicion4, posicion5;
