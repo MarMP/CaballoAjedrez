@@ -6,6 +6,22 @@ public class Caballo {
 	private Posicion posicion;
 	
 	
+	//Setter y getter de la clase 
+	public Color getColor() {
+		return color;
+	}
+	public Posicion getPosicion() {
+		return posicion;
+	}
+	private void setColor(Color color) {
+		this.color = color;
+	}
+	private void setPosicion(Posicion posicion) {
+		this.posicion = posicion;
+	}
+	
+	
+	
 	
 	
 	
