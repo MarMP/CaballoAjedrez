@@ -43,7 +43,7 @@ public class CaballoTest {
 		}
 	}
 	
-	/*
+	
 	@Test
 	public void constructorDosParametrosValidoTest() {
 		Caballo caballoBlancoDefecto = new Caballo(Color.BLANCO, 'b');
@@ -79,7 +79,7 @@ public class CaballoTest {
 			assertNull(caballoMalPosicionadoInicialmente);
 		}
 	}
-	
+	/*
 	@Test
 	public void movimientoValidoTest() {
 		Caballo caballoNegroDefecto = new Caballo();

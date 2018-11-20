@@ -46,15 +46,28 @@ public class Caballo {
 	}
 	
 	//Constructor con los parámetros color y posición 
-	/*Crea un constructor para la clase que acepte como parámetros el color y la columna inicial. 
-	 * La columna inicial debe ser la 'b' o la 'g' (de lo contrario debe lanzar la excepción IllegalArgumentException
-	 *  con un mensaje adecuado) y creara un caballo del color dado y colocado en dicha columna y 
-	 *  cuya fila será la 1 si el blanco y la 8 si es el negro.
-	 */
+	//Controlo las dos excepciones que lanza: si el color es nulo y si la columna no es válida 
+	
 	public Caballo(Color color, char columnaInicial) {
-		if (columnaInicial!='b' || columnaInicial != 'g') {
-			throw new IllegalArgumentException("ERROR: Columna inicial no válida.");
+		
+		if (color==null) {
+			throw new IllegalArgumentException("ERROR: No se puede asignar un color nulo.");
 		}
+		
+		if (columnaInicial =='b' || columnaInicial == 'g') {
+			if (color.equals(Color.BLANCO)) {
+				this.posicion = new Posicion(1, columnaInicial);
+				this.color = color;
+			}
+			if (color.equals(Color.NEGRO)) {
+				this.posicion = new Posicion(8, columnaInicial);
+				this.color = color;
+			}
+		}else {
+			throw new IllegalArgumentException("ERROR: Columna inicial no válida.");
+			
+		}
+		
 		
 	}
 	
