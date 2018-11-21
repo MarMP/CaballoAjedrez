@@ -24,7 +24,7 @@ public class MainApp {
 	
 	// Método mostrar menú
 	private static void mostrarMenu() {
-
+		System.out.println("MENÚ: ");
 		System.out.println("1: Crear Caballo por defecto");
 		System.out.println("2. Crear Caballo de un color");
 		System.out.println("3. Crear Caballo de un color en una columna inicial válida");
@@ -35,7 +35,7 @@ public class MainApp {
 
 	private static int elegirOpcion() {
 		int opcion;
-		System.out.println("Escribe una de las opciones");
+		System.out.println("Indique cuál de las opciones desea pulsar");
 		opcion = Entrada.entero();
 		return opcion;
 	}
@@ -78,11 +78,11 @@ public class MainApp {
 	}
 	
 	//Método para elegir color 
-	private static Color elegirColor() {
+	/*private static Color elegirColor() {
 		Color color;
 		System.out.println("Introduzca el color que desee para el caballo: ");
 		//color = Entrada.
-	}
+	} */
 	
 	//Método para crear un Caballo con Color y posición
 	private static void crearCaballoColorPosicion() {
