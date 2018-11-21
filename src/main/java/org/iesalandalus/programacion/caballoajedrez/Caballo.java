@@ -191,14 +191,21 @@ public class Caballo {
 		return true;
 	}
 	
-	
+	/*
 	@Override
 	public String toString() {
 		return "Caballo [color=" + color + ", posicion=" + posicion + "]";
+		//return "Caballo [posicion=[" + posicion + "], color=" + color + "]";
+	} */
+	
+	
+	@Override
+	public String toString() {
+		return "Caballo [posición=[fila=" +posicion.getFila() + ", columna=" + posicion.getColumna() + "], color=" 
+				+ color + "]";
+		
+		
 	}
-	
-	
-	
 	
 	
 }
