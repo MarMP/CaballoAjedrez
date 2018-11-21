@@ -75,14 +75,34 @@ public class MainApp {
 	//Método para crear el Caballo con Color
 	private static void crearCaballoDefectoColor() {
 		Caballo caballoColor = new Caballo(Color.BLANCO);
+		System.out.println(caballoColor.toString());
 	}
 	
 	//Método para elegir color 
-	/*private static Color elegirColor() {
-		Color color;
+	private static Color elegirColor() {
+		Color color = null;
 		System.out.println("Introduzca el color que desee para el caballo: ");
-		//color = Entrada.
-	} */
+		
+		System.out.println("Menú para escoger color para el Caballo: ");
+		System.out.println("1.Blanco");
+		System.out.println("2.-Negro");
+		System.out.println(" ");
+			
+		System.out.println("Elige un color");
+		 int opcion = Entrada.entero();
+		
+		switch(opcion) {
+		
+		case 1:			
+			color = Color.BLANCO;
+			break;
+			
+		case 2:
+			color = Color.NEGRO;
+		}		
+		
+		return color;
+	} 
 	
 	//Método para crear un Caballo con Color y posición
 	private static void crearCaballoColorPosicion() {

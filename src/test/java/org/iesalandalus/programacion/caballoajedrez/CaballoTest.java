@@ -101,7 +101,7 @@ public class CaballoTest {
 			caballoNegroDefecto.mover(Direccion.IZQUIERDA_ARRIBA);
 			assertEquals(new Posicion(8, 'b'), caballoNegroDefecto.getPosicion());
 		} catch (OperationNotSupportedException e) {
-			// No debería saltar ninguna excepción ya que los movimientos son válidos
+			fail(" No debería saltar ninguna excepción ya que los movimientos son válidos");
 		}
 	}
 	
