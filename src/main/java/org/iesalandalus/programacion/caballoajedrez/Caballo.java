@@ -76,11 +76,6 @@ public class Caballo {
 		if (direccion == null) {
 			throw new IllegalArgumentException("ERROR: Movimiento no válido.");
 		}
-		//Vuelve a la posición inicial en caso de saltar excepción
-		//Crea primero una posicionInicial y le asigna un valor predeterminador que se modificará en la siguiente línea
-		Posicion posicionInicial = new Posicion(1,'a'); 
-		posicionInicial.setColumna(posicion.getColumna());
-		posicionInicial.setFila(posicion.getFila()); 
 		
 		switch (direccion) {
 		case ARRIBA_IZQUIERDA:
